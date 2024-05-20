@@ -1,0 +1,182 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+      Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+header {
+    background-color: #2C7865;
+    width:100%;
+    height: 5rem;
+}
+
+h1 {
+    color: #FF9800;
+}
+
+header .wrapper {
+    width:60%;
+    max-width: 1120px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.wrapper a {
+    color: #D9EDBF;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.wrapper a:active {
+    color: #D9EDBF
+}
+
+/* ================================ */
+/* RECIPES */
+/* ================================ */
+
+.recipes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 3rem;
+    margin: auto;
+    width: 80%;
+    max-width: 1120px;
+}
+
+.single-recipes {
+    padding: 0.5rem;
+    border: 1px solid #90D26D;
+    border-radius: 10px;
+}
+
+.single-recipes h2 {
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+    color: #FF9800;
+}
+
+.single-recipes p {
+    text-transform: capitalize;
+    text-align: justify;
+    padding: 1.5rem 0;
+    height: 10rem;
+    font-weight: 500;
+    color: #2C7865;
+}
+
+.single-recipes div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+
+.single-recipes .link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #90D26D;
+}
+
+.single-recipes button {
+    border: none;
+    font-size: 1.5rem;
+    color: #FF9800;
+    background-color: transparent;
+    cursor: pointer;
+  }  
+
+/* ================================ */
+/* SINGLE RECIPE */
+/* ================================ */
+
+.single-recipe {
+    width: 60%;
+    max-width: 1120px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid #90D26D;
+    border-radius: 10px;
+}
+
+.single-recipe h2 {
+    padding-bottom: 1rem;
+    font-size: 2rem;
+    color: #FF9800;
+}
+
+.single-recipe p {
+    text-transform: capitalize;
+    padding: 1.5rem 0;
+    font-weight: 500;
+    color: #2C7865;
+}
+
+button {
+    border: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #90D26D;
+    background-color: transparent;
+    cursor: pointer;
+  }  
+
+/* ================================ */
+/* ADD RECIPE */
+/* ================================ */
+
+.add-recipe {
+    width: 60%;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: 1px solid #90D26D;
+    border-radius: 10px;
+}
+
+input[type=text], input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+.form button {
+    width: 100%;
+    background-color: #2C7865;
+    color: #FF9800;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+      Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
